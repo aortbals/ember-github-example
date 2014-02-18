@@ -14,3 +14,10 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+.ruby-version
+.env
+.DS_Store
+npm-debug.log
+vendor/assets/components/
+
