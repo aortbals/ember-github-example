@@ -1,0 +1,12 @@
+/*
+ *
+ *= require_self
+ *
+ * Removed `require_tree .` because we will use SCSS @import
+ * https://github.com/thoughtbot/bourbon/wiki/Rails-Sprockets
+ *
+ */
+
+// Bourbon
+@import "bourbon";
+@import "neat";
