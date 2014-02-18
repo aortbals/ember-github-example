@@ -1,4 +1,15 @@
 EmberGithubExample::Application.routes.draw do
+  get 'app/index'
+  root to: 'app#index'
+
+  namespace :api do
+    # resources :users
+    # ...
+  end
+
+  # Match all remaining paths and direct to Ember
+  get '*path' => 'app#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
