@@ -1,6 +1,10 @@
 # http://emberjs.com/guides/models/using-the-store/
 
-EmberGithubExample.ApplicationAdapter = DS.ActiveModelAdapter.extend
+# Uses https://github.com/pixelhandler/ember-data-extensions for embedded record support
+EmberGithubExample.ApplicationSerializer = DS.EmbeddedSerializer.extend()
+
+# Uses https://github.com/pixelhandler/ember-data-extensions for embedded record support
+EmberGithubExample.ApplicationAdapter = DS.EmbeddedAdapter.extend
   namespace: 'api'
 
 EmberGithubExample.Store = DS.Store.extend
