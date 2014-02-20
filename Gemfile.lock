@@ -75,6 +75,10 @@ GEM
     erubis (2.7.0)
     execjs (2.0.2)
     fabrication (2.9.8)
+    faraday (0.9.0)
+      multipart-post (>= 1.2, < 3)
+    faraday-http-cache (0.4.0)
+      faraday (~> 0.8)
     ffi (1.9.3)
     formatador (0.2.4)
     guard (2.4.0)
@@ -106,10 +110,13 @@ GEM
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.8.4)
+    multipart-post (2.0.0)
     neat (1.5.0)
       bourbon (>= 2.1)
       sass (>= 3.2)
     nio4r (1.0.0)
+    octokit (2.7.1)
+      sawyer (~> 0.5.2)
     polyglot (0.3.4)
     pry (0.9.12.6)
       coderay (~> 1.0)
@@ -159,6 +166,9 @@ GEM
       railties (>= 4.0.0, < 5.0)
       sass (>= 3.1.10)
       sprockets-rails (~> 2.0.0)
+    sawyer (0.5.3)
+      addressable (~> 2.3.5)
+      faraday (~> 0.8, < 0.10)
     sdoc (0.4.0)
       json (~> 1.8)
       rdoc (~> 4.0, < 5.0)
@@ -208,10 +218,12 @@ DEPENDENCIES
   ember-rails
   ember-source (~> 1.4.0)
   fabrication
+  faraday-http-cache
   guard
   guard-rspec
   jquery-rails
   neat
+  octokit (~> 2.0)
   pry
   rails (= 4.0.1)
   rspec-rails (~> 2.0)

@@ -3,8 +3,10 @@ EmberGithubExample::Application.routes.draw do
   root to: 'app#index'
 
   namespace :api do
-    # resources :users
-    # ...
+    resources :events, only: :index
+    resources :orgs, only: [] do
+      resources :events, only: :index
+    end
   end
 
   # Match all remaining paths and direct to Ember

@@ -6,6 +6,9 @@ gem 'rails', '4.0.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
+gem "octokit", "~> 2.0"   # Consume github
+gem 'faraday-http-cache'  # Cache octokit responses
+
 ## Style ##
 gem 'sass-rails', '~> 4.0.0'  # Use SCSS for stylesheets
 gem 'bourbon'                 # Bourbon.io, a simple and lightweight mixin library for Sass
