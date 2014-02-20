@@ -1,4 +1,24 @@
-<header>Welcome to the Github Stat Tracker!</header>
-<section class="app">
+<section id="app">
+  <header id="header">
+    <div class="logo">
+      <a href="/" class="github-logo">Github Stat Tracker</a>
+    </div>
+  </header>
+  <section id="body">
+    <nav id="navigation" class="headings">
+    </nav>
+    <section id="content">
+      <h3 class="center">Welcome to the Github Stat Tracker!</h3>
+      <section id="search">
+        <form {{action "search" on="submit"}}>
+          {{input name="search" value=queryField placeholder="Search for an Organization"}}
+          <button type="submit">Search</button>
+        </form>
+      </section>
+
+      {{outlet}}
+
+    </section>
+  </section>
 </section>
 <footer></footer>

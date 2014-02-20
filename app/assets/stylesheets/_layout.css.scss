@@ -1,0 +1,33 @@
+// Layout
+
+section#app {
+  @include outer-container;
+  @include pad;
+
+  header#header {
+    @include row;
+    .logo { @include span-columns(1); }
+  }
+
+  #body {
+    @include span-columns(6);
+    @include shift(3);
+  }
+
+  section#search {
+    @include pad;
+  }
+}
+
+
+// Logo
+
+.github-logo {
+  display: block;
+  background-image: image-url('GitHub-Mark-120px-plus.png');
+  text-indent: -999em;
+  background-size: $logo-width;
+  width: $logo-width;
+  height: $logo-width;
+  margin: 0 auto;
+}
