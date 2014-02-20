@@ -4,6 +4,7 @@
 #= require handlebars
 #= require ember
 #= require ember-data
+#= require ember-data-extensions/dist/embedded-adapter
 #= require_self
 #= require ember_github_example
 
