@@ -10,12 +10,33 @@ section#app {
   }
 
   #body {
-    @include span-columns(6);
-    @include shift(3);
+    @include span-columns(12);
+
+    @include media($large-screen) {
+      @include span-columns(8 of 12);
+      @include shift(2 of 12);
+    }
   }
 
   section#search {
     @include pad;
+  }
+
+  section#results {
+    @include pad;
+    $results-item-height: 54px;
+
+    .main {
+      min-height: $results-item-height;
+      margin-bottom: flex-gutter();
+      .image {
+        float: left;
+        width: $results-item-height;
+        height: $results-item-height;
+        margin-right: flex-gutter();
+        &.placeholder { background-color: $light-gray; }
+      }
+    }
   }
 }
 

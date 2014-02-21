@@ -106,3 +106,19 @@ cite {
 .center {
   text-align: center;
 }
+
+/* Decorators
+--------------*/
+
+a.point, span.point {
+  &:after {
+    content: ' · ';
+    color: $base-font-color;
+  }
+}
+
+.points {
+  span.point:last-of-type:after {
+    content: none;
+  }
+}
