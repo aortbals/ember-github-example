@@ -1,6 +1,6 @@
 ## Getting Started ##
 
-You'll need the follow installed.
+This example was used for a 2 hour Ember.js training. [Here are the slides](http://www.slideshare.net/aortbals/chaione-emberjs-training-21-feb2014). You'll need the follow installed.
 
 - Ruby
 
