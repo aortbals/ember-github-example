@@ -1,5 +1,9 @@
 <div class="main media">
-  <div class="image placeholder"></div>
+  <div class="image">
+    {{#with actor}}
+    <img class="circle" {{bind-attr src=gravatarUrl}}>
+    {{/with}}
+  </div>
   <div class="text">
     <div class="title">{{type}} by {{actor.login}}</div>
     <div class="sub-title">

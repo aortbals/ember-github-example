@@ -1,0 +1,4 @@
+.media .circle {
+  border-radius: ceil($logo-width / 2);
+  border: 1px solid $light-gray;
+}
