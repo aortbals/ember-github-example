@@ -1,6 +1,9 @@
 #= require jquery
 #= require jquery_ujs
 
+# *** Components ***
+#= require momentjs/moment
+
 #= require handlebars
 #= require ember
 #= require ember-data
