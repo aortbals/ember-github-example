@@ -4,7 +4,10 @@
     <div class="title">{{type}} by {{actor.login}}</div>
     <div class="sub-title">
       <span class="point">{{from-now createdAt}}</span>
-      <span>{{repo.name}}</span>
+      <span>
+      {{#with repo}}
+      <a {{bind-attr href=url}}>{{name}}</a></span>
+      {{/with}}
     </div>
   </div>
 </div>
